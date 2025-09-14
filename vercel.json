@@ -1,0 +1,17 @@
+{
+  "build": {
+    "env": {
+      "NEXT_PUBLIC_SUPABASE_URL": "@supabase-url",
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase-anon-key",
+      "SUPABASE_SERVICE_ROLE_KEY": "@supabase-service-role-key",
+      "VAPI_API_KEY": "@vapi-api-key",
+      "NEXT_PUBLIC_VAPI_PUBLIC_KEY": "@vapi-public-key",
+      "GEMINI_API_KEY": "@gemini-api-key"
+    }
+  },
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  }
+}
